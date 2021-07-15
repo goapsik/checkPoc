@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Проверка на поца</title>
+</head>
+<body>
+<h1> Проверка на поца</h1>
+<h2>Введите свое имя</h2>
+<form>
+  <input type="text" id="chel"/>
+  <button type='button' name='action' onclick="checkPoc()">Check</button>
+</form>
+<div>
+  
+</div>
+  <script>
+    function checkPoc(){
+      const message = document.querySelector('div');
+      const chelik = document.getElementById('chel').value;
+      if (chelik == 'Едік' || chelik == 'Едуард' ) {
+        message.innerHTML = '<p> О, оце тащер! Чоткий тіп, Респект, уважуха! </p>';
+      }
+      else if (chelik == 'Денис') {
+        message.innerHTML = '<p> Поц, кнур, чмо ебаное, таких тока в жопу тулять!!!</p>';
+      }
+      else {
+        message.innerHTML = '<p> Рандомний поц </p>';
+      }
+    }
+  </script>
+</body>
+</html>
